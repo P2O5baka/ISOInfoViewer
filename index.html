@@ -10,7 +10,49 @@
         darkMode: 'class',
         theme: {
           extend: {
+            fontFamily: {
+              ui: ['Inter', 'Segoe UI', 'Microsoft YaHei UI', 'Microsoft YaHei', 'Noto Sans SC', 'sans-serif'],
+              log: ['Segoe UI', 'Microsoft YaHei UI', 'Microsoft YaHei', 'Noto Sans SC', 'sans-serif'],
+              code: ['Cascadia Mono', 'Consolas', 'SFMono-Regular', 'Menlo', 'monospace'],
+            },
             colors: {
+              milk: {
+                50: 'rgb(var(--milk-50) / <alpha-value>)',
+                100: 'rgb(var(--milk-100) / <alpha-value>)',
+              },
+              matcha: {
+                50: 'rgb(var(--matcha-50) / <alpha-value>)',
+                100: 'rgb(var(--matcha-100) / <alpha-value>)',
+                200: 'rgb(var(--matcha-200) / <alpha-value>)',
+                500: 'rgb(var(--matcha-500) / <alpha-value>)',
+                700: 'rgb(var(--matcha-700) / <alpha-value>)',
+              },
+              sakura: {
+                50: 'rgb(var(--sakura-50) / <alpha-value>)',
+                100: 'rgb(var(--sakura-100) / <alpha-value>)',
+                200: 'rgb(var(--sakura-200) / <alpha-value>)',
+                500: 'rgb(var(--sakura-500) / <alpha-value>)',
+                700: 'rgb(var(--sakura-700) / <alpha-value>)',
+              },
+              sora: {
+                50: 'rgb(var(--sora-50) / <alpha-value>)',
+                100: 'rgb(var(--sora-100) / <alpha-value>)',
+                200: 'rgb(var(--sora-200) / <alpha-value>)',
+                500: 'rgb(var(--sora-500) / <alpha-value>)',
+                700: 'rgb(var(--sora-700) / <alpha-value>)',
+              },
+              mikan: {
+                50: 'rgb(var(--mikan-50) / <alpha-value>)',
+                100: 'rgb(var(--mikan-100) / <alpha-value>)',
+                200: 'rgb(var(--mikan-200) / <alpha-value>)',
+                500: 'rgb(var(--mikan-500) / <alpha-value>)',
+                700: 'rgb(var(--mikan-700) / <alpha-value>)',
+              },
+              sumi: {
+                800: 'rgb(var(--sumi-800) / <alpha-value>)',
+                900: 'rgb(var(--sumi-900) / <alpha-value>)',
+                950: 'rgb(var(--sumi-950) / <alpha-value>)',
+              },
               gray: {
                 750: '#2d3748',
                 850: '#1a202c',
@@ -21,6 +63,119 @@
         }
       }
     </script>
+    <style>
+      :root {
+        --milk-50: 248 251 255;
+        --milk-100: 237 246 255;
+        --matcha-50: 237 247 255;
+        --matcha-100: 220 235 255;
+        --matcha-200: 187 216 255;
+        --matcha-500: 95 149 211;
+        --matcha-700: 50 101 159;
+        --sakura-50: 255 241 245;
+        --sakura-100: 255 226 234;
+        --sakura-200: 255 198 212;
+        --sakura-500: 217 106 132;
+        --sakura-700: 159 64 89;
+        --sora-50: 238 251 255;
+        --sora-100: 216 243 251;
+        --sora-200: 183 231 243;
+        --sora-500: 89 169 196;
+        --sora-700: 50 119 141;
+        --mikan-50: 255 248 234;
+        --mikan-100: 255 237 198;
+        --mikan-200: 255 217 142;
+        --mikan-500: 217 145 46;
+        --mikan-700: 155 93 24;
+        --sumi-800: 32 42 54;
+        --sumi-900: 23 32 43;
+        --sumi-950: 16 24 33;
+      }
+
+      .dark {
+        --milk-50: 16 24 33;
+        --milk-100: 24 35 48;
+        --matcha-50: 20 38 56;
+        --matcha-100: 29 52 74;
+        --matcha-200: 172 209 242;
+        --matcha-500: 98 153 207;
+        --matcha-700: 126 184 232;
+        --sakura-50: 55 28 40;
+        --sakura-100: 78 38 54;
+        --sakura-200: 246 180 198;
+        --sakura-500: 222 111 139;
+        --sakura-700: 238 144 166;
+        --sora-50: 18 46 58;
+        --sora-100: 27 64 80;
+        --sora-200: 170 226 239;
+        --sora-500: 92 178 202;
+        --sora-700: 129 211 229;
+        --mikan-50: 58 40 19;
+        --mikan-100: 80 53 22;
+        --mikan-200: 248 207 139;
+        --mikan-500: 217 148 54;
+        --mikan-700: 238 179 93;
+        --sumi-800: 32 42 54;
+        --sumi-900: 23 32 43;
+        --sumi-950: 16 24 33;
+      }
+
+      .eye-care {
+        --milk-50: 251 250 246;
+        --milk-100: 240 246 250;
+        --matcha-50: 238 246 251;
+        --matcha-100: 220 235 244;
+        --matcha-200: 184 214 231;
+        --matcha-500: 95 145 180;
+        --matcha-700: 49 95 128;
+        --sakura-50: 255 244 246;
+        --sakura-100: 253 230 235;
+        --sakura-200: 247 203 213;
+        --sakura-500: 207 112 132;
+        --sakura-700: 152 73 91;
+        --sora-50: 240 251 255;
+        --sora-100: 217 242 248;
+        --sora-200: 184 228 238;
+        --sora-500: 99 169 189;
+        --sora-700: 52 117 137;
+        --mikan-50: 255 248 238;
+        --mikan-100: 251 233 203;
+        --mikan-200: 244 210 157;
+        --mikan-500: 201 143 67;
+        --mikan-700: 143 100 43;
+        --sumi-800: 32 42 51;
+        --sumi-900: 23 33 42;
+        --sumi-950: 17 25 32;
+      }
+
+      .dark.eye-care {
+        --milk-50: 17 25 32;
+        --milk-100: 25 36 45;
+        --matcha-50: 22 39 50;
+        --matcha-100: 31 55 69;
+        --matcha-200: 181 211 229;
+        --matcha-500: 96 144 176;
+        --matcha-700: 132 183 211;
+        --sakura-50: 53 31 39;
+        --sakura-100: 73 42 53;
+        --sakura-200: 239 188 199;
+        --sakura-500: 207 118 137;
+        --sakura-700: 229 151 166;
+        --sora-50: 20 47 56;
+        --sora-100: 29 64 75;
+        --sora-200: 177 225 235;
+        --sora-500: 99 171 190;
+        --sora-700: 136 207 222;
+        --mikan-50: 55 41 24;
+        --mikan-100: 75 56 29;
+        --mikan-200: 239 207 157;
+        --mikan-500: 201 146 76;
+        --mikan-700: 226 179 114;
+        --sumi-800: 32 42 51;
+        --sumi-900: 23 33 42;
+        --sumi-950: 17 25 32;
+      }
+    </style>
 
 <link rel="stylesheet" href="/index.css">
   <script type="importmap">
@@ -33,7 +188,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="./assets/index-CbIErBv1.js"></script>
+  <script type="module" crossorigin src="./assets/index-Brt2kkAZ.js"></script>
 </head>
   <body>
     <div id="root"></div>
